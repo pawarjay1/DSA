@@ -1,6 +1,7 @@
-package Basics.BasicMaths;
+package Basics.BasicMaths;    
 
-public class reverse_digit {
+public class test {
+
     static int revarse(int n){
 
         int N = Math.abs(n); 
@@ -19,10 +20,10 @@ public class reverse_digit {
         }
     }
     public static void main(String[] args) {
-        int n = -12345; 
+        int n = 12345; 
 
         int result = revarse(n); 
 
         System.out.println(result);
     }
-} 
+}
