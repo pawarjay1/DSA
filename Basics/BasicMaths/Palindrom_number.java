@@ -21,7 +21,6 @@ public class Palindrom_number {
             return 0; 
         }
 
-
     }
     public static void main(String[] args) {
         int n = -121; 
