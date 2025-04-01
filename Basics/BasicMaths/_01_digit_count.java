@@ -3,7 +3,7 @@
 
 package Basics.BasicMaths;
 
-public class digit_count {
+public class _01_digit_count {
 
     static void count_number(int n){
         int counter = 0; 
