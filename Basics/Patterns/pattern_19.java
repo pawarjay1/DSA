@@ -1,4 +1,5 @@
 package Basics.Patterns;
+
 public class pattern_19 {
     public static void main(String[] args) {
         int n = 5;
