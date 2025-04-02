@@ -1,34 +1,38 @@
 package Basics.BasicMaths;
 
 public class test {
+    static int Armstrong_Numbers(int n){
 
-    static int reverse(int x) {
-
-        int n = Math.abs(x);
-        int rev = 0;
-
-        while (n > 0) {
-            int last_digit = n % 10; // gets the last digit
-
-            n = n / 10;
-
-            if (rev > (Integer.MAX_VALUE - last_digit) / 10) {
-                return 0;
-            }
-
-            rev = (rev * 10) + last_digit;
-
+        int dup = n; 
+        int sum = 0; 
+        int result = 0; 
+        while(dup>0){
+            int last_digit = dup%10; 
+            dup=dup/10; 
+            sum = (last_digit)*3;
+            result += sum; 
+            // sum+=sum;   
         }
 
-        return (x < 0) ? (-rev) : rev;
+        // return (sum==n) ? true : false; 
+         return result; 
     }
-
     public static void main(String[] args) {
-        int x = -12345;
+        int n = 153; // is Amstrong number
 
-        int result = reverse(x);
+        // boolean result = Armstrong_Numbers(n);
 
-        System.out.println(result);
+        int res = Armstrong_Numbers(n); 
 
+        System.out.println(res);
+        
+        // System.out.println(result);
+
+        // if(result == true){
+        //     System.out.println("this number is armstrong");
+        // }else{
+        //     System.out.println("this number is not armstrong");
+        // }
+        
     }
 }
