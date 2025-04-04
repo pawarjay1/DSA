@@ -1,6 +1,6 @@
 package Basics.BasicMaths;
 
-public class Print_all_Divisors {
+public class _05_Print_all_Divisors {
     public static void main(String[] args) {
         int n = 36; 
         for(int i=1; i<=n; i++){
