@@ -1,18 +1,18 @@
 package Basics.Recursion;
 
-public class test {
-    static void func(int i){
+public class _03_1TOn {
 
-        // base condition 
-        if(i<=0){
+    static void func(int n,int i){
+        if(i>n){
             return; 
         }
-
         System.out.println(i);
-        func(i-1); 
+        func(n,i+1); 
 
     }
     public static void main(String args[]){
-        func(4); 
+        int n = 5; 
+
+        func(n,1); 
     }
 }
